@@ -7,7 +7,7 @@ type StackData struct {
 
 type Stack struct {
 	sp  *StackData
-	top uint64
+	top int
 }
 
 func NewStack() *Stack {
@@ -36,6 +36,13 @@ func (s *Stack) Peek() interface{} {
 	return nil
 }
 
-func (s *Stack) Size() uint64 {
+func (s *Stack) IsEmpty() bool {
+	if s.top == 0 {
+		return true
+	}
+	return false
+}
+
+func (s *Stack) Size() int {
 	return s.top
 }

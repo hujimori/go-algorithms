@@ -26,7 +26,7 @@ func TestStack(t *testing.T) {
 
 	}
 
-	if int(s.Size()) != len(tests) {
+	if s.Size() != len(tests) {
 		t.Errorf("Size() is Error. got=%d. expected=%d", s.Size(), len(tests))
 	}
 
