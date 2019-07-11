@@ -10,7 +10,7 @@ type Stack struct {
 	top uint64
 }
 
-func New() *Stack {
+func NewStack() *Stack {
 	return &Stack{top: 0}
 }
 

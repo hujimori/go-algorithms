@@ -13,7 +13,7 @@ func TestStack(t *testing.T) {
 		5,
 	}
 
-	s := New()
+	s := NewStack()
 
 	for _, tt := range tests {
 		s.Push(tt)
