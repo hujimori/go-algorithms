@@ -2,7 +2,7 @@ package binarysearch
 
 func LowerBound(t []int, k int) int {
 	lb := -1
-	ub := len(t) - 1
+	ub := len(t)
 	for ub-lb > 1 {
 		mid := (lb + ub) / 2
 
@@ -17,7 +17,7 @@ func LowerBound(t []int, k int) int {
 
 func UpperBound(t []int, k int) int {
 	lb := -1
-	ub := len(t) - 1
+	ub := len(t)
 	for ub-lb > 1 {
 		mid := (lb + ub) / 2
 
